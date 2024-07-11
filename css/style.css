@@ -121,17 +121,18 @@ ul {
   gap: 40px;
 }
 .spikes {
-position: relative;
+  position: relative;
 }
 .spikes::after {
-content: "";
-position: absolute;
-right: 0;
-width: 100%;
-height: 30px;
-z-index: 1;
-background-image: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25% );
-background-size: 40px 30px;
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+  background-image: linear-gradient(135deg, white 25%, transparent 25%),
+    linear-gradient(225deg, white 25%, transparent 25%);
+  background-size: 40px 30px;
 }
 .dots {
   background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/dots.png");
@@ -1487,8 +1488,11 @@ background-size: 40px 30px;
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .discount {
     padding-bottom: var(--main-section-padding-bottom);
-
+  }
 }
 .discount .image {
   background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/discount-background1.jpg");
@@ -1638,10 +1642,10 @@ background-size: 40px 30px;
   background-color: white;
   color: #0a66c2;
 }
-@media (max-width: 767px) { 
-.footer .box .social {
-justify-content: center;
-}
+@media (max-width: 767px) {
+  .footer .box .social {
+    justify-content: center;
+  }
 }
 .footer .box .text {
   line-height: var(--main-line-height);
@@ -1691,9 +1695,9 @@ justify-content: center;
   display: block;
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   .footer .box .line {
-  flex-direction: column;
+    flex-direction: column;
   }
   .footer .box .line i {
     margin-right: 0;
@@ -1711,6 +1715,5 @@ justify-content: center;
   color: white;
   margin: 50px 0 0;
   border-top: 1px solid #444;
-
 }
 /* End Footer*/
