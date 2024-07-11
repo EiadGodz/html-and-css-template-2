@@ -1487,6 +1487,8 @@ background-size: 40px 30px;
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
+    padding-bottom: var(--main-section-padding-bottom);
+
 }
 .discount .image {
   background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/imgs/discount-background1.jpg");
